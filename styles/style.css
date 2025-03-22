@@ -47,3 +47,143 @@
     max-width: 240px;
     justify-self: end;
 }
+
+.cover {
+    position: relative;
+    background-image: url("../images/cover.jpg");
+    padding: 155px 50px 0;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.cover__title {
+    position: relative;
+    line-height: 135px;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    color: #fff;
+}
+
+.aligned-text {
+    display: block;
+}
+
+.aligned-text_center {
+    text-align: center;
+}
+
+.aligned-text_right {
+    text-align: right;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0;
+}
+
+.cover__description {
+    position: relative;
+    padding: 96px 0 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cover__description-text {
+    align-self: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    word-spacing: 19px;
+    color: #fff;
+}
+
+.bet-button {
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 11px 31px;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+}
+
+.lots {
+    padding: 180px 24px 0;
+}
+
+.lots__heading {
+    padding-left: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.lots__card-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 27px 0 30px;
+}
+
+.lots__card-list-item {
+    width: 334px;
+    min-height: 596px;
+    list-style-type: none;
+    flex-grow: 1;
+}
+
+.card-link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 48px 40px;
+}
+
+.card__title {
+    position: relative;
+    font-size: 22px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 120%;
+}
+
+.card__text {
+    position: relative;
+    font-size: 20px;
+    line-height: 120%;
+    color: #fff;
+}
+
+.card_type_film {
+    background-image: url("../images/card-lot-01.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card_type_book {
+    background-image: url("../images/card-lot-02.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card_type_picture {
+    background-image: url("../images/card-lot-03.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.lots__look-more-link {
+    font-size: 20px;
+    padding-left: 40px;
+    text-underline-offset: 5px;
+}
