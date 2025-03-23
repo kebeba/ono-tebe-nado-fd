@@ -14,11 +14,11 @@
 
 .header__links-list-item {
     padding-left: 5px;
-    list-style: circle;
+    list-style-type: circle;
 }
 
 .header__links-list-item_no-bullit {
-    list-style: none;
+    list-style-type: none;
 }
 
 .header__link {
@@ -247,8 +247,11 @@
 }
 
 .footer__menu-list {
-    list-style-type: none;
     font-size: 18px;
+}
+
+.footer__menu-list-item {
+    list-style-type: none;
 }
 
 .footer__menu-link {
