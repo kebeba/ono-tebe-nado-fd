@@ -36,6 +36,8 @@
 }
 
 .address {
+    display: flex;
+    flex-direction: column;
     font-family: Raleway, sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -46,6 +48,7 @@
 .header__address {
     max-width: 240px;
     justify-self: end;
+    padding-right: 37px;
 }
 
 .cover {
@@ -186,4 +189,90 @@
     font-size: 20px;
     padding-left: 40px;
     text-underline-offset: 5px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 334px auto;
+    grid-template-rows: min-content min-content;
+    grid-template-areas: 
+        "about_logo about_header"
+        "empty_area description";
+    padding: 154px 24px 180px;
+}
+
+.about__logo {
+    grid-area: about_logo;
+    height: 240px;
+    width: 240px;
+    border-radius: 120px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.about__logo-image {
+    width: 148px;
+}
+
+.about__title {
+    grid-area: about_header;
+    font-size: 40px;
+    text-transform: uppercase;
+    align-self: center;
+    padding: 10px 25px 0;
+}
+
+.about__text {
+    padding: 10px 0 0 25px;
+    grid-area: description;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.footer {
+    display: grid;
+    padding: 0 50px 82px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer__menu {
+    justify-self: center;
+    text-align: center;
+}
+
+.footer__menu-list {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.footer__menu-link {
+    text-underline-offset: 3px;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    display: flex;
+    justify-self: end;
+    gap: 48px;
+}
+
+.footer__social-list-item {
+    list-style-type: none;
+}
+
+.footer__social-link {
+    text-decoration: none;
+}
+
+.footer__social-icon {
+    height: 48px;
 }
